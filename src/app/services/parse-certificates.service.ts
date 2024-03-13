@@ -46,8 +46,8 @@ export class ParseCertificatesService {
 
   private findProperty(sub: any, property: string) {
     let result = '';
-    sub.sub.forEach((sub: any, index: number) => {
-      if (sub.sub[0].sub[0].content().includes('commonName')) {
+    sub.sub.forEach((sub: any) => {
+      if (sub.sub[0].sub[0].content().includes(property)) {
         result = sub.sub[0].sub[1].content();
       }
     });
