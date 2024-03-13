@@ -1,4 +1,4 @@
-interface Certificate {
+interface ICertificate {
     tbsCertificate: {
         version: number // always 2
         serialNumber: number

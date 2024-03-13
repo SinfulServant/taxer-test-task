@@ -14,7 +14,7 @@ export class ParseCertificatesService {
   constructor() {}
 
   public getCertificatesFromLocalStorage() {
-    const lsData = localStorage.getItem('certificates');
+    const lsData = localStorage.getItem(keyLS);
     const validData = [];
     if (lsData) {
       const lsDataToArray = JSON.parse(lsData);
