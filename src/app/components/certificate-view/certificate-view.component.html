@@ -1,0 +1,6 @@
+<div class="certificate-data-area">
+    <p><b>Common name:</b> {{ certificate.subjectCommonName }}</p>
+    <p><b>Issuer Name:</b> {{ certificate.issuerCommonName }}</p>
+    <p><b>Valid from:</b> {{ certificate.notBefore | date: 'yyyy-MM-dd' }}</p>
+    <p><b>Valid to:</b> {{ certificate.notAfter | date: 'yyyy-MM-dd'}}</p>
+</div>

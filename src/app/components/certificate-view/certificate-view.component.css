@@ -1,0 +1,15 @@
+:host {
+    padding: 10px;
+}
+
+.certificate-data-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    border: 1px solid black;
+}
+
+p {
+    font-size: larger;
+}

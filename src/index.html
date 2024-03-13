@@ -8,6 +8,9 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <script>
+    if(!localStorage.getItem('certificates')) localStorage.setItem('certificates', '[]')
+  </script>
   <app-root></app-root>
 </body>
 </html>
